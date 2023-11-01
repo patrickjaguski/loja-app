@@ -1,15 +1,28 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {}
-
-module.exports = {
-    images: {
-        remotePatterns: [
+ 
+module.exports =
+{
+    images : {
+        remotePatterns:[
             {
-                protocol:'https',
-                hostname:"httpstatusdogs.com",
+                protocol: "https",
+                hostname: "httpstatusdogs.com",
                 port: "",
-                pathname: "/img/**",
+                pathname: "/img/**"
+            },
+            {
+                protocol: "https",
+                hostname: "www.paodeacucar.com",
+                port: "",
+                pathname: "/img/**"
+            },
+            {
+                protocol: "https",
+                hostname: "avatars.githubusercontent.com",
+                port: "",
+                pathname: "/u/**"
             }
-        ]
-    }
+        ],
+    },
 }
